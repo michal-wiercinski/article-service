@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: article-service
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${EUREKA1_HOST:eureka1.premierleaguenews.com}:${EUREKA1_PORT:8761}/eureka/ ,
+                   http://${EUREKA2_HOST:eureka2.premierleaguenews.com}:${EUREKA2_PORT:8762}/eureka/
